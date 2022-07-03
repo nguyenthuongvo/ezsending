@@ -45,6 +45,7 @@ const Account = ({ triedToEagerConnect }: AccountProps) => {
       <div>
         {isWeb3Available ? (
           <button
+            className="roup relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             disabled={connecting}
             onClick={() => {
               setConnecting(true);
@@ -76,7 +77,7 @@ const Account = ({ triedToEagerConnect }: AccountProps) => {
         rel: "noopener noreferrer",
       }}
     >
-      {ENSName || `${shortenHex(account, 4)}`}
+      Your account: {ENSName || `${shortenHex(account, 4)}`}
     </a>
   );
 };

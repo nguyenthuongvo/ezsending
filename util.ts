@@ -1,5 +1,5 @@
 import type { BigNumberish } from "@ethersproject/bignumber";
-import { formatUnits } from "@ethersproject/units";
+import { formatUnits, parseUnits } from "@ethersproject/units";
 
 export function shortenHex(hex: string, length = 4) {
   return `${hex.substring(0, length + 2)}…${hex.substring(
@@ -36,3 +36,6 @@ export const parseBalance = (
   decimals = 18,
   decimalsToDisplay = 3
 ) => parseFloat(formatUnits(value, decimals)).toFixed(decimalsToDisplay);
+
+
+export const convert2WeiAmount = (value: number, decimals = 18) => parseUnits(value.toString(), decimals);
