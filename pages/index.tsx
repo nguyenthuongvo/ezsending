@@ -201,7 +201,7 @@ export default function Example() {
                     </thead>
                     <tbody>
                         {tokens.map((item) => (
-                            <TokenBalanceRow tokenAddress={item.address} toAddress={user} amount={amount} />
+                            <TokenBalanceRow key={item.address} tokenAddress={item.address} toAddress={user} amount={amount} />
                         ))}
                         
                     </tbody>
