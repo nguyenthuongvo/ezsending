@@ -9,10 +9,10 @@ import TokenBalanceRow from "../components/TokenBalanceRow";
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Nto1 Token', href: '#' },
+  { name: '1toN Token', href: '#' },
+  { name: '1toN NFT(721)', href: '#' },
+  { name: '1toN NFT(1155)', href: '#' },
 ]
 
 const TOKEN_MAP = [
@@ -166,7 +166,7 @@ export default function Example() {
 
             <div className="grid grid-cols-2 gap-2">
               <div>
-                <div>Recepient</div>
+                <div>Recipient</div>
                 <input
                   id="to-address"
                   name="address"
