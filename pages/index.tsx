@@ -6,6 +6,7 @@ import useEagerConnect from "../hooks/useEagerConnect";
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Account from "../components/Account";
 import TokenBalanceRow from "../components/TokenBalanceRow";
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -73,10 +74,11 @@ export default function Example() {
                   <div className="flex items-center justify-between w-full md:w-auto">
                     <a href="#">
                       <span className="sr-only">Workflow</span>
-                      <img
+                      <Image
                         alt="Workflow"
-                        className="h-8 w-auto sm:h-10"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                        width={60}
+                        height={60}
+                        src="/ezsending.png"
                       />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
@@ -113,10 +115,11 @@ export default function Example() {
                 <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                        alt=""
+                    <Image
+                        alt="Workflow"
+                        width={60}
+                        height={60}
+                        src="/ezsending.png"
                       />
                     </div>
                     <div className="-mr-2">
